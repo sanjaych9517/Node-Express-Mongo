@@ -5,11 +5,12 @@ const logical = require("./logical");
 
 const server = http.createServer(( req, res)=>{
     console.log(req.url, req.method)
-    testingSyntax();
-    runtime();
+    // testingSyntax();
+    // runtime();
+    logical();
 })
 
-const PORT = 3001;
+const PORT = 3000;
 server.listen(PORT, ()=>{
     console.log(`server is listening on port ${PORT}`);
 })
