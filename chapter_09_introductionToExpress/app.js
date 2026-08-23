@@ -1,8 +1,6 @@
 
 // external module
-const express = require('express')
-// Local Module
-const userRequestHandler = require('./user')
+const express = require('express');
 
 const app = express();
 
