@@ -35,10 +35,39 @@ db.students.find()
 // skills: {$size: 3}
 // })
 
-db.students.find({
-    skills: { $in: ['Java', 'HTML']}
-})
+// db.students.find({
+//     skills: { $in: ['Java', 'HTML']}
+// })
 
-db.students.find({
-    skills: { $nin: ['Java', 'HTML'] }
-})
+// db.students.find({
+//     skills: { $nin: ['Java', 'HTML'] }
+// })
+
+// db.products.insertMany([
+//     {
+//         name: "Laptop",
+//         reviews: [
+//             { user: "Rahul", rataing: 4 },
+//             { user: "Amit", rating: 5 }
+//         ]
+//     },
+//     {
+//         name: "Mobile",
+//         reviews: [
+//             { user: "Priya", rating: 3 },
+//             { user: "Ankit", rataing: 4 },
+//             { user: "Rahul", rataing: 5 }
+//         ]
+//     }
+// ])
+
+// db.products.find({
+//     reviews: {
+//         $elemMatch: {
+//             user: 'Rahul',
+//             rating: 5
+//         }
+//     }
+// })
+
+db.products.find({})
